@@ -1,9 +1,7 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  basePath: "/jaraha-wai",
-  assetPrefix: "/jaraha-wai/",
-  output: "export",
+const nextConfig = {
+  output: 'export',
+  basePath: '/jaraha-wai',
+  assetPrefix: '/jaraha-wai/',
 };
 
 export default nextConfig;

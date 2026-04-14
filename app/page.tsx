@@ -151,7 +151,7 @@ export default function Home() {
           </div>
         </div>
         <div style={{ borderTop: '2px solid rgba(102, 126, 234, 0.1)', paddingTop: '30px', textAlign: 'center', color: '#666', fontWeight: '700' }}>
-          <p>© 2024 جرعة وعي 💚 | صحتك النفسية أولويتنا</p>
+          <p>© 2026جرعة وعي 💚 | صحتك النفسية أولويتنا</p>
         </div>
       </footer>
     </div>

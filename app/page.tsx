@@ -8,79 +8,188 @@ const quotes = [
   "تقبل نفسك أولاً، والباقي سيأتي",
   "القلق لن يغير المستقبل، لكنه سيفسد الحاضر",
   "كل خطأ هو درس، وليس فشل",
-  "أنت أقوى مما تعتقد"
+  "أنت أقوى مما تعتقد",
+  "الصبر ليس الانتظار، بل ما تفعله أثناء الانتظار",
+  "لا تقارن نفسك بالآخرين، بل قارن نفسك بمن كنت أمس",
+  "الفشل هو بداية النجاح",
+  "لا تخافوا من البداية الصغيرة، فكل شيء عظيم بدأ صغيراً",
+  "الحب لنفسك هو أعظم استثمار",
+  "التغيير يبدأ من داخلك، لا من الخارج",
+  "أنت لست ضعيفاً لأنك تشعر بالألم، بل قوي لأنك تستمر",
+  "الحياة اختبار وليست منافسة",
+  "كل يوم هو فرصة جديدة للبدء من جديد",
+  "السعادة لا تأتي من الخارج، بل من قبول نفسك",
+  "لا تؤجل أحلامك، ابدأ اليوم ولو بخطوة صغيرة",
+  "الشجاعة ليست غياب الخوف، بل التحرك رغم الخوف",
+  "أنت أهم من أي رأي يقوله الآخرون",
+  "الماضي درس، والحاضر تطبيق، والمستقبل اختبار",
+  "لا تنتظر اللحظة المثالية، اجعل اللحظة مثالية",
+  "ركز على ما تستطيع التحكم فيه، لا على ما لا تستطيع",
+  "الكمال عدو الأفضل، فلا تسعَ للكمال بل للتطور",
+  "أنت تستحق السعادة والنجاح والحب",
+  "الحياة قصيرة جداً لتضيعها على الأشياء التي لا تسعدك",
+  "اختر أن تكون إيجابياً، حتى لو كان العالم سلبياً",
+  "التعافي ليس خطياً، وهذا طبيعي تماماً",
+  "أنت لست وحدك في هذا الألم، وهناك من سيساعدك",
+  "الصحة النفسية مهمة مثل الصحة الجسدية",
+  "لا تخجل من طلب المساعدة، فهذا علامة قوة",
+  "كل شخص يحارب معركة لا نعرفها، فكن لطيفاً",
+  "أنت تستحق العيش وليس فقط البقاء",
+  "التغيير صعب لكنه ممكن دائماً",
+  "لا تقلل من قيمة جهودك الصغيرة",
+  "أنت أقوى مما تعتقد، وأحكم مما تتخيل",
+  "الحب الحقيقي يبدأ من حب نفسك",
+  "لا تنتظر الإذن من أحد لتحقيق أحلامك",
+  "الفشل ليس نهاية، بل منعطف في الطريق",
+  "أنت تستحق أن تشعر بالسعادة كل يوم",
+  "الوقت هو أثمن ما نملك، فاستثمره بحكمة",
+  "لا تسأل نفسك لماذا، بل اسأل نفسك كيف",
+  "الحياة تبدأ عندما تترك الخوف",
+  "أنت محارب، وليس ضحية",
+  "اختر السلام عن النضال دائماً",
+  "الحب والقبول يشفيان كل شيء",
+  "أنت جميل كما أنت، بدون تغيير",
+  "لا تعطِ الماضي سلطة على حاضرك",
+  "النجاح ليس بعيد المنال، بل قريب جداً",
+  "تذكر: أنت تستحق الأفضل",
+  "الحياة رحلة، وليست وجهة نهائية",
+  "كل لحظة ألم تقربك من النمو",
+  "أنت قادر على أكثر مما تتخيل",
+  "لا تسمح لأحد بتعريف قيمتك",
+  "الشفاء يحدث عندما تختار نفسك",
+  "أنت تستحق السعادة والاستقرار النفسي",
+  "التطور المستمر هو الطريق الوحيد للنجاح",
+  "لا تقارن كتابك الأول بفصل منتصف كتابهم",
+  "أنت لست مسؤولاً عن مشاعر الآخرين",
+  "الحب الذاتي ليس غروراً، بل ضرورة",
+  "كل خطوة صغيرة تعتد بها، حتى لو لم يرها أحد",
+  "أنت تحق بالراحة والهدوء",
+  "لا تضيع وقتك مع من لا يقدرك",
+  "السعادة خيار، وأنت تستطيع اختيارها",
+  "الشعور بالألم يعني أنك حي، وحي معناه لديك فرصة",
+  "أنت أكثر من كافٍ، وأنت كامل كما أنت",
+  "البحث عن الكمال يسرق منك حاضرك",
+  "لا تخف من البدء من الصفر، فالصفر ليس سوء",
+  "أنت تستحق علاقات صحية وداعمة",
+  "التغيير يبدأ بقرار واحد شجاع",
+  "الحب الحقيقي لا يؤذي، بل يشفي",
+  "أنت قيمتك لا تعتمد على إنجازاتك",
+  "الحياة أجمل عندما تتقبل نفسك",
+  "لا تستسلم، فالأفضل لم يأتِ بعد",
+  "أنت محارب الروح، وليس ضعيفاً",
+  "كل يوم هو فرصة لتصبح أفضل من الأمس",
+  "الحب والقبول يحلان كل مشكلة",
+  "أنت تستحق الحياة التي تحلم بها",
+  "لا تخجل من طلب المساعدة، فهذا شجاعة",
+  "الحياة ليست عن الوصول، بل عن الرحلة",
+  "أنت أقوى من كل التحديات التي تواجهك",
+  "السلام الداخلي هو أعظم ثروة",
+  "لا تسمح للخوف بسرقة أحلامك",
+  "أنت تستحق كل الخير والسعادة",
+  "البدء صعب، لكن الاستمرار أصعب، وأنت تستطيع",
+  "الحياة جميلة عندما تختار أن تراها بعين إيجابية",
+  "أنت لست بحاجة لتكون مثالياً لتكون مستحقاً",
+  "كل محاولة فاشلة تقربك من النجاح",
+  "الحب الذاتي هو أساس كل شيء",
+  "أنت تستحق الحياة بدون ألم",
+  "لا تؤجل السعادة لغداً، فالحاضر هو الوقت",
+  "أنت قادر على تحمل أكثر مما تتخيل",
+  "الحياة تبدأ عندما تتوقف عن الخوف",
+  "أنت جميل من الداخل والخارج",
+  "التطور الشخصي هو أفضل استثمار",
+  "لا تقلق بشأن الكمال، ركز على التطور",
+  "أنت تستحق أن تحب نفسك بكل قلبك"
 ];
 
 export default function Home() {
   const [currentQuote, setCurrentQuote] = useState(0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-indigo-900">
+    <>
       {/* Navigation */}
-      <nav className="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">
-            🌟 جرعة وعي
-          </Link>
-          <ul className="flex gap-6">
-            <li><Link href="/" className="text-gray-700 dark:text-white hover:text-indigo-600 transition">الرئيسية</Link></li>
-            <li><Link href="/articles" className="text-gray-700 dark:text-white hover:text-indigo-600 transition">مقالات</Link></li>
-            <li><Link href="/infographics" className="text-gray-700 dark:text-white hover:text-indigo-600 transition">إنفوجرافيك</Link></li>
-            <li><Link href="/about" className="text-gray-700 dark:text-white hover:text-indigo-600 transition">عن الموقع</Link></li>
+      <nav>
+        <div className="container">
+          <h1>🌟 جرعة وعي</h1>
+          <ul>
+            <li><Link href="/">الرئيسية</Link></li>
+            <li><Link href="/articles">مقالات</Link></li>
+            <li><Link href="/infographics">إنفوجرافيك</Link></li>
+            <li><Link href="/about">عن الموقع</Link></li>
           </ul>
         </div>
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 py-12">
-        {/* Daily Quote Section */}
-        <section className="mb-12">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 text-center">
-            <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
-              💡 اقتباس اليوم
-            </h2>
-            <p className="text-2xl text-indigo-600 dark:text-indigo-400 font-semibold mb-4">
-              "{quotes[currentQuote]}"
-            </p>
-            <button
-              onClick={() => setCurrentQuote(Math.floor(Math.random() * quotes.length))}
-              className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg transition"
-            >
-              اقتباس جديد
-            </button>
-          </div>
+      <main>
+        {/* Daily Quote */}
+        <section className="quote-section">
+          <h2>💡 اقتباس اليوم</h2>
+          <p>"{quotes[currentQuote]}"</p>
+          <button 
+            className="quote-button"
+            onClick={() => setCurrentQuote(Math.floor(Math.random() * quotes.length))}
+          >
+            اقتباس جديد
+          </button>
+          <p style={{marginTop: '1rem', fontSize: '0.875rem', color: '#9ca3af'}}>
+            ({currentQuote + 1} من {quotes.length})
+          </p>
         </section>
 
-        {/* Features Grid */}
-        <section className="grid md:grid-cols-3 gap-6">
-          <Link href="/articles" className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl hover:scale-105 transition cursor-pointer">
-            <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-3">
-              📖 مقالات
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              اقرأ مقالات قصيرة في علم النفس والتطوير الذاتي
-            </p>
+        {/* Features */}
+        <div className="grid">
+          <Link href="/articles" style={{textDecoration: 'none'}}>
+            <div className="card">
+              <h3>📖 مقالات</h3>
+              <p>اقرأ مقالات قصيرة في علم النفس والتطوير الذاتي</p>
+            </div>
           </Link>
 
-          <Link href="/infographics" className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl hover:scale-105 transition cursor-pointer">
-            <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-3">
-              🎨 إنفوجرافيك
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              صور وتخطيطات توضح مفاهيم نفسية بسهولة
-            </p>
+          <Link href="/infographics" style={{textDecoration: 'none'}}>
+            <div className="card">
+              <h3>🎨 إنفوجرافيك</h3>
+              <p>صور وتخطيطات توضح مفاهيم نفسية بسهولة</p>
+            </div>
           </Link>
 
-          <Link href="/about" className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl hover:scale-105 transition cursor-pointer">
-            <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-3">
-              ✨ محفزات يومية
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              تحفيز يومي لتحسين مزاجك وإنتاجيتك
-            </p>
+          <Link href="/about" style={{textDecoration: 'none'}}>
+            <div className="card">
+              <h3>✨ محفزات يومية</h3>
+              <p>تحفيز يومي لتحسين مزاجك وإنتاجيتك</p>
+            </div>
           </Link>
-        </section>
+        </div>
       </main>
-    </div>
+
+      {/* Footer */}
+      <footer>
+        <div className="container">
+          <div>
+            <h3>عن الموقع</h3>
+            <p>موقع متخصص في التوعية النفسية وتطوير الذات بطريقة مبسطة وسهلة الفهم</p>
+          </div>
+          <div>
+            <h3>الروابط</h3>
+            <ul>
+              <li><Link href="/">الرئيسية</Link></li>
+              <li><Link href="/articles">المقالات</Link></li>
+              <li><Link href="/infographics">الإنفوجرافيك</Link></li>
+              <li><Link href="/about">عن الموقع</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3>تابعنا</h3>
+            <div className="social-links">
+              <a href="#">📘</a>
+              <a href="#">🐦</a>
+              <a href="#">📷</a>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>© 2024 جرعة وعي. جميع الحقوق محفوظة.</p>
+        </div>
+      </footer>
+    </>
   );
 }
